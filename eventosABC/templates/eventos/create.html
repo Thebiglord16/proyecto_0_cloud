@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Nuevo Evento{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="titulo">Titulo</label>
+    <input name="titulo" id="titulo" value="{{ request.form['titulo'] }}" required>
+    <label for="fecha">Fecha</label>
+    <input name="fecha" id="fecha" value="{{ request.form['fecha'] }}" required>
+    <label for="hora_inicio">Hora incio</label>
+    <input name="hora_inicio" id="hora_inicio" value="{{ request.form['hora_inicio'] }}" required>
+    <label for="hora_fin">Hora fin</label>
+    <input name="hora_fin" id="hora_fin" value="{{ request.form['hora_fin'] }}" required>
+    <label for="descripcion">descripción</label>
+    <textarea name="descripcion" id="descripcion">{{ request.form['descripcion'] }}</textarea>
+    <input type="submit" value="Guardar">
+  </form>
+{% endblock %}

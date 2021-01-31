@@ -1,0 +1,67 @@
+html{
+    font-family: Arial;
+    background-color: #e0d5d6;
+}
+
+body{
+    color: #ec7a69;
+}
+
+h2{
+    margin: 0;
+    padding-left: 10px;
+}
+
+nav h1{
+    text-align: center;
+    color: #728694;
+}
+
+
+nav p{
+    text-align: center;
+}
+
+div{
+    background-color: #cfa9a7;
+    margin: 50px 20px 50px 20px;
+    border-radius: 30px;
+}
+
+.detalle{
+    padding-bottom: 4%;
+}
+
+.infoevento{
+    padding: 20px 10px 20px 10px;
+}
+
+.volver{
+    margin-left: 90%;
+    border-radius: 30px;
+    padding: 1%;
+    background-color: #798b97;
+    color: #ec7a69;
+    text-decoration: none;
+}
+
+.borrar{
+    margin-top: 2%;
+    margin-left: 90%;
+    border-radius: 30px;
+    padding: 1%;
+    background-color: red;
+    color: black;
+    text-decoration: none;
+}
+
+.flash{
+    text-align: center;
+}
+
+#top{
+    background-color: #e0d5d6;
+    text-align: center;
+    margin: 0;
+    border-radius: 0;
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block header %}
+    <h1>{% block title %} Detalles del evento {% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="detalle">
+        <h2>{{ evento['titulo'] }}</h2>
+        <p>{{ evento ['descripcion'] }}</p>
+        <br>
+        <ul>
+            <li>
+                hora inicio : {{ evento['hora_inicio'] }}
+            </li>
+            <li>
+                hora fin : {{ evento['hora_fin'] }}
+            </li>
+        </ul>
+        <a class="volver" href={{ url_for('evento.index') }}> volver </a>
+        <form action="{{ url_for('evento.delete_evento', id=evento['id']) }}" method="post">
+            <input class="borrar" type="submit" value="Borrar" onclick="return confirm('esta seguro?');">
+        </form>
+    </div>
+{% endblock %}

@@ -34,7 +34,7 @@ def close_db(e=None):
 Metodo que inicializa y construye la base de datos usando el archivo schema.sql
 """
 def init_db():
-    db.get_db()
+    db = get_db()
 
     with current_app.open_resource('schema.sql') as f:
         db.executescript(f.read().decode('utf8'))
