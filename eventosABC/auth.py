@@ -42,6 +42,7 @@ def registrar():
                 'INSERT INTO user (email, password) values (?,?)', (email, generate_password_hash(password))
             )
             db.commit()
+
             return redirect(url_for('auth.login'))
         
         flash(error)
