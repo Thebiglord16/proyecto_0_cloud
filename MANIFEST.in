@@ -1,0 +1,4 @@
+include eventosABC/schema.sql
+graft eventosABC/static
+graft eventosABC/templates
+global-exclude *.pyc

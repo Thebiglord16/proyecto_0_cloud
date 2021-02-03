@@ -167,7 +167,7 @@ def update_evento(id):
         db.execute(
             'UPDATE evento SET titulo=?, descripcion=?,'
             'fecha=?, hora_inicio=?, hora_fin=? WHERE id=?',
-            (titulo, fecha, descripcion, hora_inicio, hora_fin, evento_viejo['id'])
+            (titulo, descripcion, fecha, hora_inicio, hora_fin, evento_viejo['id'])
         )
         db.commit()
         return jsonify('se actualizo el evento correctamente', dict(get_evento(id)))
